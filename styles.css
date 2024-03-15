@@ -1,0 +1,266 @@
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+    --fs: 15px;
+    --font: 'League Spartan', sans-serif;
+    --title: 700;
+    --name: 500;
+    --text: 400;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@media screen and (min-width:920px) {
+
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        max-width: 1600px;
+        min-height: 100vh;
+        padding: 1rem 5rem;
+        font-size: var(--fs);
+        font-family: var(--font);
+        font-weight: var(--text);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--White);
+    }
+
+    header {
+        float: left;
+        width: min(100%, 375px)
+    }
+
+    .title {
+        color: var(--Very-Dark-Magenta);
+        font-size: 3rem;
+        font-weight: var(--title);
+        line-height: 2.5rem;
+    }
+
+    .subtitle {
+        color: var(--Very-Dark-Magenta);
+        margin-top: -1rem;
+        line-height: 1.4rem;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        float: right;
+        width: max(400px, 35%);
+    }
+
+    aside div {
+        border-radius: 5px;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        background: var(--Light-Grayish-Magenta);
+        margin-bottom: 1.5rem;
+        padding-inline: 1.5rem 2.5rem;
+    }
+
+    .star-icon {
+        margin-right: .5rem;
+    }
+
+    .rate {
+        font-weight: var(--title);
+        color: var(--Very-Dark-Magenta);
+    }
+
+    .left {
+        align-self: flex-start;
+    }
+
+    .center {
+        align-self: center;
+    }
+
+    .right {
+        align-self: flex-end;
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+    }
+
+    section {
+        width: 380px;
+        height: fit-content;
+        background: var(--Very-Dark-Magenta);
+        padding: 1rem 2.5rem;
+        border-radius: 10px;
+    }
+
+    section div {
+        color: var(--White);
+        font-weight: var(--name);
+        letter-spacing: 0.05rem;
+    }
+
+    section p {
+        line-height: 1.3rem;
+    }
+
+    .author {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    span {
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        place-items: center;
+        margin-left: 1rem;
+    }
+
+    .author-name {
+        font-weight: var(--title);
+        margin-bottom: -.8rem;
+    }
+
+    .author-img {
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+    }
+
+    .descript {
+        color: var(--Soft-Pink);
+    }
+
+    .top {
+        margin-top: 0;
+    }
+
+    section .center {
+        margin-top: 1.5rem;
+    }
+
+    .bottom {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width : 920px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+        font-size: var(--fs);
+        font-family: var(--font);
+    }
+
+    header {
+        width: min(320px, 100%);
+        margin: auto;
+    }
+
+    .title {
+        font-size: 3rem;
+        line-height: 3rem;
+        color: var(--Very-Dark-Magenta);
+    }
+
+    .subtitle {
+        line-height: 1.3rem;
+        color: var(--Dark-Grayish-Magenta);
+        letter-spacing: 0.05rem;
+    }
+
+    aside {
+        display: flex;
+        width: min(400px, 100%);
+        flex-direction: column;
+        place-content: center;
+        margin: auto;
+    }
+
+    aside div {
+        margin-bottom: 1.5rem;
+        width: 100%;
+        padding-inline: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--Light-Grayish-Magenta)
+    }
+
+    .star-icon {
+        margin-right: .5rem;
+    }
+
+    .rate {
+        margin-left: 1rem;
+        font-size: 1rem;
+        font-weight: var(--title);
+        color: var(--Very-Dark-Magenta)
+    }
+
+    section {
+        width: min(380px, 100%);
+        margin: auto;
+        height: fit-content;
+        background: var(--Very-Dark-Magenta);
+        padding: 1rem 2.5rem;
+        border-radius: 10px;
+        margin-top: 1.5rem;
+    }
+
+    section div {
+        color: var(--White);
+        font-weight: var(--name);
+        letter-spacing: 0.05rem;
+    }
+
+    section p {
+        line-height: 1.3rem;
+    }
+
+    .author {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    span {
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        place-items: center;
+        margin-left: 1rem;
+    }
+
+    .author-name {
+        font-weight: var(--title);
+        margin-bottom: -.8rem;
+    }
+
+    .author-img {
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+    }
+
+    .descript {
+        color: var(--Soft-Pink);
+    }
+}
